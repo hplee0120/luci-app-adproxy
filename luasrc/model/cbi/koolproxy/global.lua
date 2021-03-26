@@ -67,6 +67,7 @@ e:value("kp.dat", translate("视频规则"))
 e:value("daily.txt", translate("每日规则"))
 e:value("user.txt", translate("自定义规则"))
 
+
 e = t:taboption("base", ListValue, "koolproxy_port", translate("端口控制"))
 e.default = 0
 e.rmempty = false
