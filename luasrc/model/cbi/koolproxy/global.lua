@@ -284,7 +284,7 @@ end
 function e.write(self, section, value)
 end
 
-t=o:section(TypedSection,"acl_rule",translate("广告过滤大师 访问控制"),
+t=o:section(TypedSection,"acl_rule",translate("访问控制（单独指定客户端过滤模式）"),
 translate("ACLs is a tools which used to designate specific IP filter mode,The MAC addresses added to the list will be filtered using https"))
 t.template="cbi/tblsection"
 t.sortable=true
