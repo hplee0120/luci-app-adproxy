@@ -96,7 +96,7 @@ e.rmempty = false
 e:value(0, translate("不过滤"))
 e:value(1, translate("过滤HTTP协议"))
 e:value(2, translate("过滤HTTP(S)协议"))
-e:value(3, translate("全部过滤"))
+e:value(3, translate("过滤HTTP+HTTPS协议"))
 e.description = translate(string.format("<font color=\"blue\"><strong>访问控制设置中其他主机的默认规则</strong></font>"))
 
 e = t:taboption("base", ListValue, "time_update", translate("定时更新"))
