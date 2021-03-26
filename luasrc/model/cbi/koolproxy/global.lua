@@ -389,7 +389,7 @@ function(o,a,i)
 end
 )
 
-t=o:section(TypedSection,"usetips",translate("过滤HTTPS广告使用说明"))
+t=o:section(TypedSection,"usetips",translate("广告屏蔽大师 使用说明"))
 t.anonymous = true
 t:append(Template("koolproxy/feedback"))
 return o
