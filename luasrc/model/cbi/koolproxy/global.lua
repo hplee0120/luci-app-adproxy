@@ -94,9 +94,9 @@ e = t:taboption("base", ListValue, "koolproxy_acl_default", translate("默认访
 e.default = 1
 e.rmempty = false
 e:value(0, translate("不过滤"))
-e:value(1, translate("过滤HTTP协议"))
-e:value(2, translate("过滤HTTP(S)协议"))
-e:value(3, translate("过滤HTTP+HTTPS协议"))
+e:value(1, translate("过滤HTTP模式"))
+e:value(2, translate("过滤HTTP + HTTPS模式"))
+e:value(3, translate("过滤全端口模式"))
 e.description = translate(string.format("<font color=\"blue\"><strong>访问控制设置中其他主机的默认规则</strong></font>"))
 
 e = t:taboption("base", ListValue, "time_update", translate("定时更新"))
@@ -315,9 +315,9 @@ e.width="20%"
 e.default=1
 e.rmempty=false
 e:value(0,translate("不过滤"))
-e:value(1,translate("过滤 HTTP"))
-e:value(2,translate("过滤HTTP + HTTPS"))
-e:value(3,translate("过滤全端口"))
+e:value(1,translate("过滤HTTP模式"))
+e:value(2,translate("过滤HTTP + HTTPS模式"))
+e:value(3,translate("过滤全端口模式"))
 
 t=o:section(TypedSection,"rss_rule",translate("规则订阅"), translate("请确保订阅规则的兼容性"))
 t.anonymous=true
